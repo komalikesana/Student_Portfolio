@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .section-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 70%;
+        }
+        .section-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .education-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .edu-section, .courses-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .edu-section .edu-image, .courses-section .courses-image {
+            margin-left: 20px;
+        }
+        .edu-image img, .courses-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        dl dt {
+            padding: 5px 5px;
+        }
+        dl dd {
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="profile pic" class="profile-pic">
+            <h1>KOMALI KESANA</h1>
+            <p>Passionate Front-End Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="education">
+        <div class="education-container">
+            <div class="edu-section">
+                <div class="section-content">
+                    <h2>Education</h2>
+                    <dl>
+                        <dt><b>BTech</b></dt>
+                        <dd>From SRM University AP (2022-2026)</dd>
+                        <dt><b>Intermediate</b></dt>
+                        <dd>From NRI Junior College - 97.4%  (2020-2022)</dd>
+                        <dt><b>SSC</b></dt>
+                        <dd>From Geetanjali Vidyalayam - 99 (2020)</dd>
+                    </dl>
+                </div>
+                <div class="edu-image">
+                    <img src="education.jpg" alt="education pic">
+                </div>
+            </div>
+            <div class="courses-section">
+                <div class="section-content">
+                    <h2>Courses and Certifications</h2>
+                    <dl>
+                        <dt><b>Front-End development</b></dt>
+                        <dd>From Rinex</dd>
+                        <dt><b>Python</b></dt>
+                        <dd>From NPTEL, UDEMY</dd>
+                        <dt><b>Data Science</b></dt>
+                        <dd>From Udemy</dd>
+                        <dt><b>Cyber Security</b></dt>
+                        <dd>From Google</dd>
+                        <dt><b>Employability skills</b></dt>
+                        <dd>From Wadwani foundation</dd>
+                    </dl>
+                </div>
+                <div class="courses-image">
+                    <img src="courses.jpg" alt="courses pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 KOMALI</p>
+    </footer>
+</body>
+</html>

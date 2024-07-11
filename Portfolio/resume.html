@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .resume {
+            width: 50%;
+            height: 750px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            line-height: 2;
+            font-size: 20px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn:hover {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="Profile Pic" class="profile-pic">
+            <h1>KOMALI KESANA</h1>
+            <p>Passionate Front-End Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <center>
+        <img src="resume.jpg" alt="Resume Pic" class="resume"><br><br>
+        <a href="resume.pdf" download="resume.pdf">
+            <button class="btn" onclick="downloadResume()">Download</button>
+        </a>
+    </center><br><br>
+    <footer>
+        <p>&copy; 2024 KOMALI</p>
+    </footer>
+
+    <script>
+        function downloadResume() {
+            alert('Downloading resume...');
+        }
+    </script>
+</body>
+</html>

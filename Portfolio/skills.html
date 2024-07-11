@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .section-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 70%;
+        }
+        .section-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .tech-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tech-section, .soft-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .tech-section .tech-image, .soft-section .soft-image {
+            margin-left: 20px;
+        }
+        .tech-image img, .soft-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        dl dt {
+            padding: 5px 5px;
+        }
+        dl dd {
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="profile pic" class="profile-pic">
+            <h1>KOMALI KESANA</h1>
+            <p>Passionate Front-End Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="tech">
+        <div class="tech-container">
+            <div class="tech-section">
+                <div class="section-content">
+                    <h2>Techical skills</h2>
+                    <ul type="none">
+                        <li>C Language</li>
+                        <li>C++ Language</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Data Structure</li>
+                        <li>Design analysis of algorithms</li>
+                        <li>HTMl</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>PHP</li>
+                        <li>Bootstrap</li>
+                        <li>React JS</li>
+                        <li>DBMS</li>
+                    </ul>
+                </div>
+                <div class="tech-image">
+                    <img src="tech-skills.jpg" alt="tech pic">
+                </div>
+            </div>
+            <div class="soft-section">
+                <div class="section-content">
+                    <h2>Soft Skills</h2>
+                    <ul type="none">
+                        <li>Communication Skills</li>
+                        <li>Problem Solving Skills</li>
+                        <li>Active Listener</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+                <div class="soft-image">
+                    <img src="soft-skills.jpg" alt="soft pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 PURNA TEJITHA</p>
+    </footer>
+</body>
+</html>

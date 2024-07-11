@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .section-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pro-section, .interns-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .pro-image, .interns-image {
+            margin-left: 20px;
+        }
+        .pro-image img, .interns-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        dl dt {
+            padding: 5px 5px;
+        }
+        dl dd {
+            padding: 5px 5px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="profile pic" class="profile-pic">
+            <h1>KOMALI KESANA</h1>
+            <p>Passionate Front-End Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>       
+    <section id="projects">
+        <div class="project-container">
+            <div class="pro-section">
+                <div class="section-content">
+                    <h2>Projects</h2>
+                    <dl>
+                        <dt><b><a href="https://github.com/komalikesana/TextEditor" target="_blank">Text Editor</a></b></dt>
+                        <dd>A text editor created by using Data Structure and C</dd>
+                        <dt><b><a href="https://github.com/komalikesana/Hangman" target="_blank">Hangman Game</a></b></dt>
+                        <dd>Created by using Data Structure</dd>
+                        <dt><b><a href="https://github.com/komalikesana/Car_Rental_System" target="_blank">Car Rental System</a></b></dt>
+                        <dd>Implemented a comprehensive Car Rental System using Object-Oriented Programming principles in C++.</dd>
+                        <dt><b><a href="https://github.com/komalikesana/Hostel_Management_System" target="_blank">Hostel Management System</a></b></dt>
+                        <dd>A learning website created by using web and dbms</dd>
+                        <dt><b><a href="https://github.com/komalikesana/Netflix" target="_blank">Netflix Home Page</a></b></dt>
+                        <dd>Netflix home page created by using front end web technology</dd>
+                    </dl>
+                </div>
+                <div class="pro-image">
+                    <img src="projects.jpg" alt="project pic">
+                </div>
+            </div>
+            <div class="interns-section">
+                <div class="section-content">
+                    <h2>Internships</h2>
+                    <dl>
+                        <dt><b>Web Development</b></dt>
+                        <dd>From Rinex.</dd>
+                        <dt><b>Front-End Development</b></dt>
+                        <dd>From Bharath Intern.</dd>
+                    </dl>
+                </div>
+                <div class="interns-image">
+                    <img src="internship.jpg" alt="courses pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 KOMALI</p>
+    </footer>
+</body>
+</html>

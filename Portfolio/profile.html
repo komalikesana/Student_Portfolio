@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-content h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .skills-list, .interests-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        #know-more-btn, #know-less-btn {
+            background-color: #333;
+            color: #fff;
+            line-height: 2.5;
+            border: none;
+            width: 15%;
+            border-radius: 5px;
+            margin-top: 1rem; /* Added margin to separate buttons */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="profile pic" class="profile-pic">
+            <h1>KOMALI KESANA</h1>
+            <p>Passionate Front-End Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Welcome to Komali Kesana's Portfolio</h1>
+    <div class="main-content">
+        <section id="about"> 
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p id="basic-info">Hello, I'm Komali Kesana from Guntur. I specialize in building websites that look great and work smoothly.</p>
+                <button id="know-more-btn" onclick="toggleInfo()">Know More</button>
+                <div id="more-info" class="hidden">
+                    <p>I use HTML, CSS, and JavaScript to create user-friendly interfaces that make navigating the web a breeze. I enjoy turning design ideas into functional websites that people love to use, and I have a strong foundation in web development.</p>
+
+                    <h3>Core Values</h3>
+                    <p>I believe in continuous learning, innovation, and collaboration. I am committed to staying updated with the latest advancements in my fields of interest, and I strive to make meaningful contributions to the tech industry through my work.</p>
+
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>Front-End Frameworks (Bootstrap)</li>
+                        <li>Version Control (Git, GitHub)</li>
+                    </ul>
+
+                    <h3>Interests</h3>
+                    <p>When I'm not coding, I enjoy:</p>
+                    <ul class="interests-list">
+                        <li>Participating in hackathons and coding competitions</li>
+                        <li>Exploring new web development tools and technologies</li>
+                        <li>Spending time with family and friends</li>
+                    </ul>
+
+                    <h3>Future Goals</h3>
+                    <p>My goal is to continue growing as a Front-End Engineer and take on more complex projects that challenge my skills and creativity. 
+                        I aspire to work on innovative web applications that make a positive impact on users' lives and contribute to the advancement of technology.</p>
+
+                    <h3>Projects</h3>
+                    <p>I have completed several projects, including a Car Rental System and a Hostel Management System, showcasing my skills in web development and database management system.</p>
+                </div>
+                <button id="know-less-btn" class="hidden" onclick="toggleInfo()">Know Less</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 KOMALI</p>
+    </footer>
+    <script>
+        function toggleInfo() {
+            const moreInfo = document.getElementById('more-info');
+            const knowMore = document.getElementById('know-more-btn');
+            const knowLess = document.getElementById('know-less-btn');
+        
+            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                moreInfo.style.display = 'block';
+                knowMore.style.display = 'none';
+                knowLess.style.display = 'inline-block';
+            } else {
+                moreInfo.style.display = 'none';
+                knowMore.style.display = 'inline-block';
+                knowLess.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
